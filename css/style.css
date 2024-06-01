@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem; /* Reduced padding to make navbar smaller */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -28,11 +28,23 @@ body {
     color: #F46036;
     text-decoration: none;
     font-size: 1.5rem;
+    margin: 1rem; /* Removed margin to bring closer */
+    padding: 0; /* Removed padding to bring closer */
+}
+
+.sub-brand {
+    font-size: 1.0rem;
+    margin: 0; /* Removed margin to bring closer */
+    padding: 0; /* Removed padding to bring closer */
+    display: block; /* Ensure it stays on a new line */
+    line-height: 1.2; /* Adjusted line-height for better spacing */
 }
 
 .navbar-menu {
     display: flex;
-    list-style: none; /* Remove the bullet points */
+    list-style: none;
+    margin: 0; /* Removed margin to reduce height */
+    padding: 0; /* Removed padding to reduce height */
 }
 
 .navbar-item {
@@ -52,7 +64,7 @@ body {
 }
 
 main {
-    padding-top: 4rem; /* Adjust based on navbar height */
+    padding-top: 4rem; 
 }
 
 h1 {
