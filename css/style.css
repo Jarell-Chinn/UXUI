@@ -28,7 +28,7 @@ body {
     color: #F46036;
     text-decoration: none;
     font-size: 1.5rem;
-    margin: 1rem; /* Removed margin to bring closer */
+    margin: 0; /* Removed margin to bring closer */
     padding: 0; /* Removed padding to bring closer */
 }
 
@@ -55,7 +55,7 @@ body {
     color: #F46036;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
+    transition: background-color .3s;
 }
 
 .navbar-link:hover {
@@ -65,6 +65,11 @@ body {
 
 main {
     padding-top: 4rem; 
+    background-color: #12100E;
+}
+
+.bio {
+    justify-content: flex-start;
 }
 
 h1 {
@@ -76,8 +81,9 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
+    height: 60%;
     align-items: center;
-    height: 100vh;
+    background-color: bisque;
 }
 
 /* New styles for bio and profile picture */
@@ -85,22 +91,35 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 5rem;
+    padding-right: 15rem;
 }
 
 .bio {
     flex: 1;
-    padding-right: 2rem;
+    padding-right: 30%;
+    padding-left: 10%
 }
 
 .profile-pic {
-    flex: 0 0 150px;
+    flex: 0 0 300px;
     border-radius: 50%;
     overflow: hidden;
+    width: 300px;
+    height: 300px;
 }
 
 .profile-pic img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
+}
+
+.white-space {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #F46036;
+    color: #12100E;
+    text-align: center;
 }
