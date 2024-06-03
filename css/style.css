@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #12100E;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +7,6 @@ body {
     padding: 0;
     color: #FFFDF7;
 }
-
 .navbar {
     width: 100%;
     background-color: #333;
@@ -19,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem; /* Reduced padding to make navbar smaller */
+    padding: 0.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -28,23 +29,23 @@ body {
     color: #F46036;
     text-decoration: none;
     font-size: 1.5rem;
-    margin: 0; /* Removed margin to bring closer */
-    padding: 0; /* Removed padding to bring closer */
+    margin: 0;
+    padding: 0;
 }
 
 .sub-brand {
     font-size: 1.0rem;
-    margin: 0; /* Removed margin to bring closer */
-    padding: 0; /* Removed padding to bring closer */
-    display: block; /* Ensure it stays on a new line */
-    line-height: 1.2; /* Adjusted line-height for better spacing */
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.2;
 }
 
 .navbar-menu {
     display: flex;
     list-style: none;
-    margin: 0; /* Removed margin to reduce height */
-    padding: 0; /* Removed padding to reduce height */
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-item {
@@ -64,41 +65,76 @@ body {
 }
 
 main {
-    padding-top: 4rem; 
-    background-color: #12100E;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
-.bio {
-    justify-content: flex-start;
-}
-
-h1 {
-    color: #F46036;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.container {
+.white-space {
+    
     display: flex;
     justify-content: center;
-    height: 60%;
-    align-items: center;
-    background-color: bisque;
+  
+    height: 100px;
 }
 
-/* New styles for bio and profile picture */
+.rose-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 5rem;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    opacity: .2;
+    z-index: -1;
+}
+
+
+
+.container-works {
+    display: flex;
+    padding-left: 10%;
+    justify-content: left;
+    height: 60%;
+    align-items: center;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.underline-extended {
+    display: inline-block; /* Makes the element only as wide as its content */
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+    padding-right: 50px; /* Adds space to the right of the text */
+}
+
+.underline-extended:after {
+    content: ''; /* Required for :after to display */
+    position: absolute; /* Positions relative to the parent element */
+    left: 0; /* Starts at the beginning of the element */
+    right: -1000px; /* Extends past the text */
+    bottom: 0; /* Aligns to the bottom of the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: #FFFDF7; /* Color of the underline */
+    z-index: -1; /* Keeps the line behind the text if needed */
+}
+
+
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5rem;
-    
 }
 
 .bio {
     flex: 1;
     padding-right: 10%;
-    
+    font-size: 1.5rem;
 }
 
 .profile-pic {
@@ -116,16 +152,8 @@ h1 {
     display: block;
 }
 
-.white-space {
-   height: 250px;
-   width: 250x;
-   overflow: hidden;
-   opacity: 0.2;
-}
-
-.white-space img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+h1 {
+    color: #F46036;
+    text-align: center;
+    margin-top: 50px;
 }
