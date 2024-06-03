@@ -122,11 +122,19 @@ main {
     content: ''; 
     position: absolute; 
     left: 0; 
-    right: -1000px; 
+   right: -1000px;  /* this adjusts how long the line is */
     bottom: 0; 
     height: 2px; 
     background-color: #FFFDF7; 
     z-index: -1; 
+}
+ /* REMEMBER TO WRITE A SCRIPT TO FIND LENGTH OF LINE */
+.about-line:after {
+    right: -900px;
+}
+
+.social-line:after {
+    right: -963px; 
 }
 
 
