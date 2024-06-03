@@ -1,4 +1,6 @@
-
+html {
+    font-size: 16px;
+}
 
 body {
     background-color: #12100E;
@@ -20,25 +22,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
-    max-width: 1200px;
+    padding: 0.5rem;  /* stays, as it's already small */
+    max-width: 75rem;  /* 1200px / 16px = 75rem */
     margin: 0 auto;
 }
 
 .navbar-brand {
     color: #F46036;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  /* stays */
     margin: 0;
     padding: 0;
 }
 
 .sub-brand {
-    font-size: 1.0rem;
+    font-size: 1rem;  /* 1.0rem from 16px */
     margin: 0;
     padding: 0;
     display: block;
-    line-height: 1.2;
+    line-height: 1.2;  /* typically stays as a multiplier */
 }
 
 .navbar-menu {
@@ -49,23 +51,23 @@ body {
 }
 
 .navbar-item {
-    margin-left: 1rem;
+    margin-left: 1rem;  /* 16px / 16px = 1rem */
 }
 
 .navbar-link {
     color: #F46036;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;  /* stays */
     transition: background-color .3s;
 }
 
 .navbar-link:hover {
     background-color: #575757;
-    border-radius: 5px;
+    border-radius: 0.3125rem;  /* 5px / 16px */
 }
 
 main {
-    padding-top: 4rem;
+    padding-top: 4rem;  /* 64px / 16px = 4rem */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -73,104 +75,55 @@ main {
 }
 
 .white-space {
-    
     display: flex;
     justify-content: center;
-  
-    height: 100px;
+    height: 6.25rem;  /* 100px / 16px */
 }
 
-.rose-container{
+.rose-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 5rem;
+    padding-top: 5rem;  /* 80px / 16px */
     background-size: cover;
     background-position: center;
-    height: 100px;
-    width: 100px;
-    opacity: .2;
+    height: 6.25rem;  /* 100px / 16px */
+    width: 6.25rem;  /* 100px / 16px */
+    opacity: 0.2;
     z-index: -1;
 }
 
-
-
 .container-works {
     display: flex;
-    padding-left: 10%;
+    padding-left: 10%;  /* context-dependent, consider viewport width */
     justify-content: left;
-    height: 60%;
     align-items: center;
-    width: 90%;
-    font-size: 2.5rem;
+    width: 90%;  /* relative */
+    font-size: 2.5rem;  /* 40px / 16px */
     opacity: 0;
     transition: opacity 2s ease-out;
 }
 
-.container-works.visible {
-    opacity: 1;
-}
-
-.underline-extended {
-    display: inline-block; 
-    position: relative; 
-    padding-right: 50px;
-}
-
-.underline-extended:after {
-    content: ''; 
-    position: absolute; 
-    left: 0; 
-   right: -1000px;  /* this adjusts how long the line is */
-    bottom: 0; 
-    height: 2px; 
-    background-color: #FFFDF7; 
-    z-index: -1; 
-}
- /* REMEMBER TO WRITE A SCRIPT TO FIND LENGTH OF LINE */
-.about-line:after {
-    right: -900px;
-}
-
-.social-line:after {
-    right: -963px; 
-}
-
-
 .content {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem;
+    padding: 5rem;  /* 80px / 16px */
 }
 
 .bio {
     flex: 1;
-    padding-right: 10%;
-    font-size: 1.5rem;
+    padding-right: 10%;  /* context-dependent, consider viewport width */
+    font-size: 1.5rem;  /* 24px / 16px */
 }
 
 .profile-pic {
-    flex: 0 0 300px;
+    flex: 0 0 18.75rem;  /* 300px / 16px */
     border-radius: 50%;
     overflow: hidden;
-    width: 300px;
-    height: 300px;
-}
-
-.profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-h1 {
-    color: #F46036;
-    text-align: center;
-    margin-top: 50px;
+    width: 18.75rem;  /* 300px / 16px */
+    height: 18.75rem;  /* 300px / 16px */
 }
 
 .work {
@@ -178,31 +131,9 @@ h1 {
     justify-content: space-around;
     align-items: center;
     margin: 1rem 0;
-    padding: 4rem;
+    padding: 4rem;  /* 64px / 16px */
 }
 
 .work-image-wrapper {
-   width: 450px;
-   height: 250px;
-    overflow: hidden;
-    border-radius: 10px;
-    
-}
-.work-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-}
-
-.work-image-wrapper.visible img {
-    opacity: 1;
-}
-
-
-.work-title {
-    font-size: 1.5rem;
-    color: #F46036;
+   width: 28.125rem; 
 }
