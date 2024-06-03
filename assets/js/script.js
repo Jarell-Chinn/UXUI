@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    setupSmoothScroll('a[href="#About"]', '#About');
+    setupSmoothScroll('a[href="#Socials"]', '#Socials');
+    setupSmoothScroll('a[href="#Home"]', '#Home');
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     let observer = new IntersectionObserver((entries, observer) => {
@@ -16,3 +21,45 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(element);
     });
 });
+
+
+
+
+function setupSmoothScroll(linkSelector, sectionSelector) {
+    const link = document.querySelector(linkSelector);
+    if (link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const section = document.querySelector(sectionSelector);
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+    
+}
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const aboutLink = document.querySelector('a[href="#About"]');
+//     aboutLink.addEventListener('click', function(event) {
+//         event.preventDefault();
+//         const aboutSection = document.querySelector('#About');
+//         aboutSection.scrollIntoView({ behavior: 'smooth' });
+//     });
+// });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const contactLink = document.querySelector('a[href="#Socials"]');
+//     contactLink.addEventListener('click', function(event) {
+//         event.preventDefault();
+//         const contactSection = document.querySelector('#Socials');
+//         contactSection.scrollIntoView({ behavior: 'smooth' });
+//     });
+// });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const workLink = document.querySelector('a[href="#Home"]');
+//     workLink.addEventListener('click', function(event) {
+//         event.preventDefault();
+//         const workSection = document.querySelector('#Home');
+//         workSection.scrollIntoView({ behavior: 'smooth' });
+//     });
+// });
