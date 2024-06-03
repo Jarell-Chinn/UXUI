@@ -107,20 +107,20 @@ main {
 }
 
 .underline-extended {
-    display: inline-block; /* Makes the element only as wide as its content */
-    position: relative; /* Needed for absolute positioning of pseudo-element */
-    padding-right: 50px; /* Adds space to the right of the text */
+    display: inline-block; 
+    position: relative; 
+    padding-right: 50px;
 }
 
 .underline-extended:after {
-    content: ''; /* Required for :after to display */
-    position: absolute; /* Positions relative to the parent element */
-    left: 0; /* Starts at the beginning of the element */
-    right: -1000px; /* Extends past the text */
-    bottom: 0; /* Aligns to the bottom of the text */
-    height: 2px; /* Thickness of the underline */
-    background-color: #FFFDF7; /* Color of the underline */
-    z-index: -1; /* Keeps the line behind the text if needed */
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    right: -1000px; 
+    bottom: 0; 
+    height: 2px; 
+    background-color: #FFFDF7; 
+    z-index: -1; 
 }
 
 
@@ -156,4 +156,31 @@ h1 {
     color: #F46036;
     text-align: center;
     margin-top: 50px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 4rem;
+}
+
+.work-image-wrapper {
+   width: 450px;
+   height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.work-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.work-title {
+    font-size: 1.5rem;
+    color: #F46036;
 }
