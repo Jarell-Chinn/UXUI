@@ -30,8 +30,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin: 0 auto;
 }
 
@@ -156,6 +156,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 5rem;
+    gap: 4rem;
 }
 
 .bio {
@@ -217,4 +218,31 @@ h1 {
 .work-title {
     font-size: 1.5rem;
     color: #F46036;
+}
+
+#aboutGrid {
+    display: grid;
+    margin: 0px 10%;
+    min-height: 500px;
+    height: 90vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "about aboutPic"
+    "about aboutPic";
+}
+
+#about {
+    grid-area: about;
+    padding: 5rem;
+    font-size: 1.5rem;
+}
+
+#aboutPic {
+    grid-area: aboutPic;
+    background-image: url(/assets/imgs/rose2flip.png);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    
 }
