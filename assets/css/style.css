@@ -1,3 +1,10 @@
+/* .colors {
+    primary: #F46036; orange
+    secondary: #F3B700; yellow
+    background: #12100E; black
+    text: #FFFDF7; white
+} */
+
 html {
     font-size: 16px;
 }
@@ -23,7 +30,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    max-width: 75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin: 0 auto;
 }
 
@@ -66,12 +74,17 @@ body {
     border-radius: 0.3125rem;  
 }
 
+
 main {
     padding-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
+}
+
+.highlight {
+    color: #F3B700;
 }
 
 .white-space {
