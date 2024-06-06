@@ -244,5 +244,34 @@ h1 {
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat;
+    opacity: 0.2;
     
 }
+
+#socialGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+    grid-template-rows: auto 1fr; /* First row for text, second row for images */
+    gap: 20px; /* Increases space between grid items */
+    text-align: center; /* Centers text horizontally */
+}
+
+#social {
+    grid-column: 1 / -1; /* This makes the text span all columns */
+    padding: 0 20px; /* Adds padding to reduce the text width */
+    max-width: 800px; /* Limits the text width */
+    margin: 0 auto; /* Centers the text block */
+    font-size: 1.5rem; /* Increases the font size */
+}
+
+#socialLinkedin, #socialInstagram, #socialTwitter {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+img {
+    width: 50%; /* Adjust the width to make images smaller */
+    height: auto; /* Maintains aspect ratio */
+}
+
