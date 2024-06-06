@@ -248,7 +248,7 @@ h1 {
 
 #aboutPic {
     grid-area: aboutPic;
-    background-image: url("/assets/imgs/rose2flip.png"); 
+    
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat;
