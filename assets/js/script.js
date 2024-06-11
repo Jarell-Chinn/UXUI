@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
 function setupSmoothScroll(linkSelector, sectionSelector) {
     const link = document.querySelector(linkSelector);
     if (link) {
@@ -35,29 +36,14 @@ function setupSmoothScroll(linkSelector, sectionSelector) {
     
 }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const aboutLink = document.querySelector('a[href="#About"]');
-//     aboutLink.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         const aboutSection = document.querySelector('#About');
-//         aboutSection.scrollIntoView({ behavior: 'smooth' });
-//     });
-// });
+// RandomNumber(); // Call the function to start the loop
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const contactLink = document.querySelector('a[href="#Socials"]');
-//     contactLink.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         const contactSection = document.querySelector('#Socials');
-//         contactSection.scrollIntoView({ behavior: 'smooth' });
-//     });
-// });
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const workLink = document.querySelector('a[href="#Home"]');
-//     workLink.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         const workSection = document.querySelector('#Home');
-//         workSection.scrollIntoView({ behavior: 'smooth' });
-//     });
-// });
+// function RandomNumber() { 
+//     let number = Math.floor(Math.random() * 10000); 
+//     if (number === 4) {
+//         let element = document.getElementById("delete");
+//         if (element) element.remove();
+//     }
+//     console.log(number);
+//    RandomNumber()
+// }
