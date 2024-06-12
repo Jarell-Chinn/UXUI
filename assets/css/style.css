@@ -16,6 +16,12 @@ body {
     padding: 0;
     color: #FFFDF7;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .navbar {
     width: 100%;
     background-color: #333;
@@ -233,11 +239,13 @@ h1 {
     margin: 0px 10%;
     min-height: 500px;
     height: 90vh;
+    overflow: hidden;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas: 
     "about aboutPic"
     "about aboutPic";
+
 }
 
 #about {
@@ -262,6 +270,7 @@ h1 {
     grid-template-rows: auto 1fr; /* First row for text, second row for images */
     gap: 20px; /* Increases space between grid items */
     text-align: center; /* Centers text horizontally */
+    margin: 0 auto; /* Centers the grid */
 }
 
 #social {
@@ -283,3 +292,109 @@ img {
     height: auto; /* Maintains aspect ratio */
 }
 
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    #aboutGrid {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "about"
+        "aboutPic";
+        height: auto;
+        margin: 0px 5%; /* Reduce margin for smaller screens */
+    }
+
+    #about {
+        text-align: center;
+    }
+    .underline-extended:after {
+        content: ''; 
+        position: absolute; 
+        left: 0; 
+        right: -10px;  
+        bottom: 0; 
+        height: 2px; 
+        background-color: #FFFDF7; 
+        z-index: -1; 
+    }
+  
+    .about-line:after {
+        right: -10px;
+    }
+    
+    .social-line:after {
+        right: -10px; 
+    }
+
+    
+
+    #about, #aboutPic {
+        padding: 2.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .navbar-brand {
+      display: none;
+    }
+
+    .sub-brand {
+        display: none;
+    }
+
+    .navbar-item {
+        margin-left: 0rem;
+    }
+    
+    .profile-pic {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #aboutGrid {
+        margin: 0px 2%; /* Even smaller margin for very small screens */
+    }
+
+    #about, #aboutPic {
+        padding: 1.5rem; /* Even less padding for very small screens */
+    }
+}
+
+#socialGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+    grid-template-rows: auto 1fr; /* First row for text, second row for images */
+    gap: 20px; /* Increases space between grid items */
+    text-align: center; /* Centers text horizontally */
+    margin: 0 auto; /* Centers the grid */
+}
+
+@media (max-width: 1200px) {
+    #socialGrid {
+        grid-template-columns: 1fr; /* Stack in a single column on smaller screens */
+    }
+}
+
+@media (max-width: 768px) { /* Adjust this breakpoint as needed for your design */
+    .work {
+        flex-direction: column; /* Stacks children vertically */
+        align-items: center; /* Centers items in the column */
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .work-image-wrapper {
+        width: 90%; /* Adjust image wrapper width for smaller screens */
+        margin-bottom: 1rem; /* Add some space between the image and the title */
+    }
+
+    .work-title {
+        text-align: center; /* Ensures titles are centered under images */
+    }
+}

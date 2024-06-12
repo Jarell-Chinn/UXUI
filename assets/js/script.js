@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSmoothScroll('a[href="#About"]', '#About');
     setupSmoothScroll('a[href="#Socials"]', '#Socials');
     setupSmoothScroll('a[href="#Home"]', '#Home');
+    setupSmoothScroll('a[href="#Logo"]', '#Logo');
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -36,7 +37,7 @@ function setupSmoothScroll(linkSelector, sectionSelector) {
     
 }
 
-// RandomNumber(); // Call the function to start the loop
+// RandomNumber();
 
 // function RandomNumber() { 
 //     let number = Math.floor(Math.random() * 10000); 
