@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarell Chinn Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
+    
     <nav class="navbar">
         <div class="navbar-container">
             <a href="#Logo" class="navbar-brand">Jarell Chinn <p class="sub-brand"> UX/UI Designer</p></a>
@@ -28,7 +37,7 @@
         <section class="content">
             <div class="bio">
                 <h1></h1>
-                <p>Hello, I'm Jarell a student at <span class="highlight">Berkeley</span> and an intern in <span class="highlight">Europe</span>. Over my academic and professional journey, I have primarily focused on <span class="highlight">front-end web development</span>. These days, I am dedicating my efforts to developing my skills in <span class="highlight">machine learning</span> and <span class="highlight">AI</span>, aiming to leverage these cutting-edge technologies to create innovative solutions.
+                <p>Hello, I'm Jarell a student at <span data-cursor-text="HELOOOOOOO" data-cursor-stick class="highlight berk-text">Berkeley</span> and an intern in <span class="highlight europe-text">Europe</span>. Over my academic and professional journey, I have primarily focused on <span class="highlight FEWD-text">front-end web development</span>. These days, I am dedicating my efforts to developing my skills in <span class="highlight ML-text">machine learning</span> and <span class="highlight AI-text">AI</span>, aiming to leverage these cutting-edge technologies to create innovative solutions.
                 </p>
             </div>
             <div class="profile-pic">
@@ -37,7 +46,7 @@
         </section>
        
     </main>
-    <section class="container-works fade-effect">
+    <section class="sub-title fade-effect">
 
         <div>
             <h1 class="underline-extended">Works</h1>
@@ -82,7 +91,7 @@
         
         </div>
     </div>
-    <section class="container-works fade-effect">
+    <section class="sub-title fade-effect">
         <div id="About">
             <h1 class="underline-extended about-line">About Me</h1>
         </div>
@@ -97,15 +106,15 @@
         </div>
         
     </section>
-    <section class="container-works fade-effect">
+    <section class="sub-title ">
 
         <div id="Socials">
-            <h1 class="underline-extended social-line">Socials</h1>
+            <h1 class="underline-extended social-line fade-effect">Socials</h1>
         </div>
        
     </section>
 
-    <section id="container-works fade-effect">
+    <section class="fade-effect">
         <div id="socialGrid">
             <div id="social">
                 <p>Follow me on my social media platforms to stay updated on my latest projects and collaborations. I am always looking for new opportunities to connect with other professionals and students in the tech industry. Feel free to reach out to me on any of the following platforms</p>
@@ -123,7 +132,10 @@
             </div>
         </div>
     </section>
+
     
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/sketch.js"></script>
+    
 </body>
 </html>
