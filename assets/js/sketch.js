@@ -29,7 +29,7 @@ const cursor = new MouseFollower({
     },
     visible: true,
     visibleOnState: false,
-    speed: .1,
+    speed: .8,
     ease: 'expo.out',
     overwrite: true,
     skewing: 0,
@@ -64,5 +64,37 @@ berkText.addEventListener('mouseenter', () => {
 });
 
 berkText.addEventListener('mouseleave', () => {
+    cursor.removeText();
+});
+
+europeText.addEventListener('mouseenter', () => {
+    cursor.setText("Europe")
+});
+
+europeText.addEventListener('mouseleave', () => {
+    cursor.removeText();
+});
+
+FEWDText.addEventListener('mouseenter', () => {
+    cursor.setText("Front-End Web Development")
+});
+
+FEWDText.addEventListener('mouseleave', () => {
+    cursor.removeText();
+});
+
+MLText.addEventListener('mouseenter', () => {
+    cursor.setText("Machine Learning")
+});
+
+MLText.addEventListener('mouseleave', () => {
+    cursor.removeText();
+});
+
+AIText.addEventListener('mouseenter', () => {
+    cursor.setText("Artificial Intelligence")
+});
+
+AIText.addEventListener('mouseleave', () => {
     cursor.removeText();
 });
