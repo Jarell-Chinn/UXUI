@@ -112,6 +112,7 @@ main {
 .highlight {
     color: #F3B700;
     cursor: none;
+    text-decoration: none;
 }
 
 .white-space {

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSmoothScroll('a[href="#Socials"]', '#Socials');
     setupSmoothScroll('a[href="#Home"]', '#Home');
     setupSmoothScroll('a[href="#Logo"]', '#Logo');
+    setupSmoothScroll('a[href="#front-end"]', '#front-end');
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -20,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(element);
     });
 });
+
+
 
 
 
